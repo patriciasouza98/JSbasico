@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005 JavaScript</title>
+
+    <style>
+        body {
+            font: 12px arial;
+        }
+
+        button {
+            font-size: 12px;
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Trabalhando com números</h1>
+
+    <button onclick="calcular()">Clique para calcular</button>
+
+    <section id="res">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+
+    <script>
+
+        window.alert('seja bem-vindo(a) ao meu site!')
+
+        function calcular() {
+            let n1 = Number(window.prompt('digite um numero:'))
+
+            let res = document.querySelector('section#res')
+
+            res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!`
+        }
+
+    </script>
+
+</body>
+
+</html>
